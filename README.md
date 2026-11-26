@@ -39,3 +39,39 @@ To run it from a local copy without installing:
 ```
 claude --plugin-dir /path/to/claude_mods/fig-popup
 ```
+
+## diagram-pane
+
+Shows colour diagrams in a Windows Terminal split pane beside the chat,
+drawn as real images with Sixel.
+
+- Put `/diagram` anywhere in a prompt except at the very start, for example
+  "Draw a /diagram of the Arakawa C grid". Claude writes the diagram as an SVG
+  (or a Graphviz `.dot` file) under `diagrams/` in the working directory.
+- Every SVG or `.dot` file written under a `diagrams/` folder is rendered to
+  PNG and shown in the pane, with or without `/diagram`. Overwriting the file
+  redraws it.
+- The first diagram of a session opens the pane on the right. `/diagram-pane`
+  opens it again after it has been closed.
+- The pane redraws when it is resized. The latest render is kept in
+  `~/.cache/diagram-pane/latest.png`.
+
+Needs WSL, a Windows Terminal that draws Sixel (1.22 or newer), and:
+
+```
+sudo apt install chafa librsvg2-bin inotify-tools graphviz
+```
+
+`graphviz` is needed only for `.dot` diagrams.
+
+### Install
+
+```
+/plugin install diagram-pane --marketplace maureenjcohen/claude_mods
+```
+
+To run it from a local copy without installing:
+
+```
+claude --plugin-dir /path/to/claude_mods/diagram-pane
+```

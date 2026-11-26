@@ -1,6 +1,7 @@
 # Scratch output from trying the mods out
 figs/
 zonal_mean_u.py
+diagrams/
 
 # Type definitions Claude Code regenerates for each mod
 .claude-plugin/types/

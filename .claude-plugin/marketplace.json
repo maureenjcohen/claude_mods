@@ -1,11 +1,18 @@
 {
   "name": "claude-mods",
-  "owner": { "name": "maureenjcohen" },
+  "owner": {
+    "name": "maureenjcohen"
+  },
   "plugins": [
     {
       "name": "fig-popup",
       "source": "./fig-popup",
       "description": "Opens figures in the Windows image viewer when a prompt asks for a /popup"
+    },
+    {
+      "name": "diagram-pane",
+      "source": "./diagram-pane",
+      "description": "Shows colour diagrams in a Windows Terminal split pane, drawn with Sixel"
     }
   ]
 }
