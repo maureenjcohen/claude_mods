@@ -1,6 +1,6 @@
 {
   "name": "claude-mods",
-  "owner": { "name": "mc5526" },
+  "owner": { "name": "maureenjcohen" },
   "plugins": [
     {
       "name": "fig-popup",

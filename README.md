@@ -21,13 +21,13 @@ Shows a figure in the Windows image viewer when a prompt asks for it.
 At the prompt of a Claude Code terminal session:
 
 ```
-/plugin install fig-popup --marketplace <owner>/<repo>
+/plugin install fig-popup --marketplace maureenjcohen/claude_mods
 ```
 
 From a shell:
 
 ```
-claude plugin install fig-popup --marketplace <owner>/<repo>
+claude plugin install fig-popup --marketplace maureenjcohen/claude_mods
 ```
 
 Answer `y` to add the marketplace, then choose a scope. A private repository
