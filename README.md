@@ -53,6 +53,8 @@ drawn as real images with Sixel.
   redraws it.
 - The first diagram of a session opens the pane on the right. `/diagram-pane`
   opens it again after it has been closed.
+- Press `q` in the pane to close it. A `q` typed in the chat pane by mistake
+  is only text, so it cannot close the chat.
 - The pane redraws when it is resized. The latest render is kept in
   `~/.cache/diagram-pane/latest.png`.
 
