@@ -1,0 +1,11 @@
+{
+  "name": "claude-mods",
+  "owner": { "name": "mc5526" },
+  "plugins": [
+    {
+      "name": "fig-popup",
+      "source": "./fig-popup",
+      "description": "Opens figures in the Windows image viewer when a prompt asks for a /popup"
+    }
+  ]
+}
